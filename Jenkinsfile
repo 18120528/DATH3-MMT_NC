@@ -16,9 +16,8 @@ pipeline
       {
         withDockerRegistry(credentialsId: 'DATH3', url: 'https://index.docker.io/v1/') 
         {
-          bat 'dir'
-        //bat 'docker build -t 18120528/mmt-nc:v1 .'
-        //bat 'docker push 18120528/mmt-nc:v1'
+        bat 'docker build -t 18120528/mmt-nc:v1 .'
+        bat 'docker push 18120528/mmt-nc:v1'
         }
       }
     }
