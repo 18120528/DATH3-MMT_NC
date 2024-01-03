@@ -7,7 +7,7 @@ pipeline
     {
       steps 
       {
-        git 'https://github.com/18120528/DATH3-MMT_NC.git'
+        git branch: 'master', url: 'https://github.com/18120528/DATH3-MMT_NC.git'
       }
     }
     stage('Build') 
